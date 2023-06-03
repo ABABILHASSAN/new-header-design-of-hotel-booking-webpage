@@ -1,0 +1,566 @@
+
+*{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+} 
+
+
+
+ html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+
+}
+
+body{
+        background-color: #fff;
+}
+
+/* header section starts */
+
+
+.section .section-container{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 1rem 2%;
+}
+
+.header .header-container{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0rem 2%;
+}
+
+.section h1 {
+        font-size: 4rem;
+        color: #5B5B5B;
+        padding-bottom: 2rem;
+}
+
+.header .header-container .header-section{
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding: 1.5rem 2%;
+        z-index: 1000;
+    }
+    
+.header .header-container .header-section.sticky{
+            background-color: #20293c;
+            box-shadow: 0 .5rem 1rem #20293c;
+            /* border-bottom: .1rem solid #fff; */
+}
+
+.header .header-container .header-section .header-section-container{
+        max-width: 1280px;
+        margin: 0 auto;   
+}
+
+
+
+.header .header-container .contact{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.header .header-container .contact .info{
+        font-size: 1.8rem;
+        color: #fff;
+}
+
+.header .header-container .contact .lang{
+        display: flex;
+        align-items: center;
+}
+
+.header .header-container .contact .lang img{
+        width: 30px;
+}
+
+.header .header-container .contact .lang img:first-child{
+        margin-right: 2rem;
+}
+
+.header .header-container .contact .info i{
+        color: #ff0000;
+}
+
+.header .header-container .main-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 2rem;
+}
+
+.header .header-container .main-header .rating img{
+        width: 400px;
+}
+
+.header .header-container .main-header .rating .star{
+        font-size: 2rem;
+        color: #fff;
+}
+
+.header .header-container .main-header .rating .star img{
+        width: 100px;
+        padding-right: 1rem;
+}
+
+
+.header .header-container .main-header .nav-bar ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.header .header-container .main-header .nav-bar ul li{
+        font-size: 2.5rem;
+        padding-left: 3rem;
+        font-weight: bold;
+}
+
+.header .header-container .main-header .nav-bar ul li a{
+        text-decoration: none;
+        color: #fff;
+}
+
+.header .header-container .main-header .nav-bar ul li a:hover{
+        color: #e7a233;
+        cursor: pointer;
+}
+
+.header .header-container .main-header .menu-icon{
+        display: none;
+        color: #fff;
+        font-size: 5rem;
+}
+
+
+.header .header-container .main-header .menu-icon i:hover{
+        cursor: pointer;
+        color: #e7a233;
+}
+
+
+.header .header-container .bot-nav-bar{
+        position: absolute;
+        top: 10rem;
+        left: 0;
+        right: 0;
+        display: none;
+}
+
+.header .header-container .bot-nav-bar ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.header .header-container .bot-nav-bar ul li{
+        padding: 0 1.5rem;
+        font-size: 3rem;
+        font-weight: bold;
+}
+
+.header .header-container .bot-nav-bar ul li a{
+        color: #fff;
+}
+
+.header .header-container .bot-nav-bar ul li a:hover{
+        color: #e7a233;
+        cursor: pointer;
+}
+
+
+.header .header-container .description{
+        position: absolute;
+        max-width: 1280px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        bottom: 15rem;
+        padding: 0 2%;
+}
+
+.header .header-container .description .description-container h1{
+        color: #fff;
+        font-size: 4rem;
+        width: bold;
+        padding-bottom: 3rem;
+}
+
+.header .header-container .description .description-container p{
+        color: #fff;
+        font-size: 2rem;
+        text-align: justify;
+}
+
+/* header section Ends */
+
+
+/* menu section starts */
+
+
+.menu-section {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1001;
+        background: #fff;
+        box-shadow: 0 .5rem 1rem #000;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 53%);
+        overflow-y: scroll;
+}
+    
+.menu-section.active {
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%, 100% 53%);
+}
+    
+.menu-section #close {
+        position: absolute;
+        color: #000;
+        cursor: pointer;
+        top: 2rem;
+        right: 3rem;
+        font-size: 5rem;
+}
+    
+.menu-section .logo-area img {
+        width: 30rem;
+        padding: 4rem 2rem 0rem 2rem;
+}
+    
+.menu-section .lan {
+        font-size: 2rem;
+        text-align: center;
+        color: #000
+}
+    
+.menu-section .mail {
+        font-size: 2rem;
+        padding: 2rem;
+        color: #000;
+}
+    
+.menu-section .phone {
+        font-size: 2rem;
+        padding: 2rem;
+        color: #000;
+}
+    
+.menu-section .address {
+        font-size: 2rem;
+        padding: 2rem;
+        color: #000;
+}
+    
+    .menu-section .location {
+        font-size: 2rem;
+        padding: 2rem;
+        color: #000;
+}
+    
+        .menu-section .location img {
+        margin: 3rem;
+        width: 25rem;
+        border-top: .5rem solid #000;
+        border-bottom: .5rem solid #000;
+        border-left: .25rem solid #000;
+        border-right: .25rem solid #000;
+}
+    
+/* menu section ends */
+
+/* Checking section Starts */
+
+.check {
+        position: absolute;
+        background-color: #fff;
+        max-width: 1280px;
+        margin: 0 auto;
+        left: 5%;
+        right: 5%;
+        top: -12rem;
+}
+    
+.check .check-container {
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto auto auto;
+        margin: 2rem;
+        background: #F1F1F1;
+        border: .1rem solid #d8d3d3;
+        text-align: center;
+}
+    
+.check .check-container .check-one {
+        margin: 4rem 0;
+        padding: 2rem;
+        border-right: .1rem solid #d8d3d3;
+}
+    
+.check .check-container .check-two {
+        padding: 2rem;
+        background-color: #2DA8E3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+    
+.check .check-container .check-two a {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+}
+    
+.check .check-container .check-two:hover {
+        background-color: #e7a233;
+        cursor: pointer;
+}
+    
+.check .check-container .check-one h3 {
+        font-size: 2rem;
+        color: #878787;
+}
+    
+.check .check-container .check-one .date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+    
+.check .check-container .check-one .date .number {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #000;
+        margin-right: 1rem;
+}
+    
+.check .check-container .check-one .date .month span {
+        font-size: 2rem;
+        font-weight: 100;
+        color: #ffab25;
+}
+    
+.check .check-container .check-one .date .month i {
+        font-size: 2rem;
+        color: #000;
+}
+    
+    
+    
+/* Checking section Ends */
+
+/* Brand logo Section Starts */
+    
+#section1{
+        position: relative;
+}
+
+.section .section-container .brand-logo-section{
+        padding: 15rem 0 5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4rem;
+}
+
+.section .section-container .brand-logo-section .logo{
+        flex: 1 1 42rem;
+}
+
+.section .section-container .brand-logo-section .logo img{
+        width: 100%;
+}
+
+.section .section-container .brand-logo-section .discribtion{
+        flex: 1 1 42rem;
+}
+
+.section .section-container .brand-logo-section .discribtion h2{
+        width: 100%;
+        color: #878787;
+        font-size: 3rem;
+}
+
+.section .section-container .resort p{
+        font-size: 2rem;
+        text-align: justify;
+        color: #5B5B5B;
+}
+
+/* Brand logo Section Ends */
+
+
+
+
+
+
+
+/* media queries starts */
+
+@media (max-width: 991px){
+
+        html{
+                font-size: 55%;
+        
+        }
+
+        .header .header-container .main-header .menu-icon{
+                display: inline-block;
+        }
+
+        .header .header-container .contact{
+                display: none;
+        }
+
+        .header .header-container .main-header{
+                padding-top: 1rem;
+        }
+
+        .header .header-container .main-header .nav-bar{
+                display: none;
+        }
+
+        .header .header-container .bot-nav-bar{
+                display: inline-block;
+        }
+
+
+
+        .menu-section{
+                padding: 2rem
+        }
+
+        .menu-section .logo-area img {
+                width: 25rem;
+                padding: 5rem 5rem 0rem 4rem;
+        }
+        
+        .menu-section .lan {
+                font-size: 2rem;
+        }
+        
+        .menu-section .mail {
+                font-size: 2rem;
+        }
+        
+        .menu-section .phone {
+                font-size: 2rem;
+        }
+        
+        .menu-section .address {
+                font-size: 2rem;
+        }
+        
+        .menu-section .location {
+                font-size: 2rem;
+        }
+        
+        .menu-section .location img {
+                margin: 2rem;
+                width: 25rem;
+        }
+
+        .section .section-container .room-container .box .botton-holder .btn{
+                margin-top: 3rem
+        }
+        
+        .section .section-container .room-container .box .botton-holder .btn a{
+                font-size: 2rem;
+                padding: 1rem;
+                margin-top: 2rem;
+        }
+
+
+}
+
+
+
+@media (max-width: 768px){
+        .header .header-container .main-header .rating img{
+                width: 300px;
+        }
+
+        .header .header-container .main-header .rating .star{
+                font-size: 1.5rem;
+        }
+
+
+
+
+        .check{
+                top: -8rem;
+        }
+           
+        .check .check-container {
+                margin: .5rem;
+
+        }
+            
+        .check .check-container .check-one {
+                margin: 2rem 0;
+                padding: 1rem;
+        }
+            
+        .check .check-container .check-two a {
+                font-size: 1.7rem;
+        }
+            
+        .check .check-container .check-one h3 {
+                font-size: 1.7rem;
+        }
+            
+   
+        .check .check-container .check-one .date .number {
+                font-size: 3rem;
+        }
+
+        .section .section-container .brand-logo-section .discribtion h2{
+                font-size: 2rem;
+        }
+
+
+
+}
+
+
+@media (max-width: 450px){
+        html{
+                font-size: 50%;
+        
+        }
+
+
+
+        .header .header-container .header-section .header-section-container .hotel_name img{
+                width: 20rem;
+        }
+
+        .section .section-container .room-container .box .botton-holder .btn{
+                margin-top: 2rem
+        }
+        
+        .section .section-container .room-container .box .botton-holder .btn a{
+                font-size: 1.5rem;
+                padding: 1rem;
+                margin-top: 2rem;
+        }
+       
+}
+
+/* media queries ends */
